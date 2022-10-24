@@ -1,0 +1,102 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+/* toto je černá magie, na kterou nešahej! */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+BARVY
+czechitas                 #b92e81
+šedé pozadí stránky       #bdc3c7
+tmavé pozadí pod textem   #31363b
+dělítka mezi tlačítky     #3f464d
+tlačítko portfolio        #e74c3c
+tlačítko facebook         #3b5998
+tlačítko twitter          #1da1f2
+*/
+
+
+body {
+  background-color: #bdc3c7;
+  }
+
+ .profil {
+  display: flex;
+  flex-direction: column;
+  background-color:#31363b ;
+  margin: 3% 75% 30% 3%;
+  box-shadow:0 10px 16px 0 rgba(0,0,0,0.5);
+  font-family: 'Source Sans Pro', sans-serif;}
+
+
+.obsah {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding:10%
+}
+.logo {
+  background-color: #b92e81;
+  border-radius: 50%;
+  float: right; 
+  position: absolute; top: 33%; left: 20%;
+  box-shadow:0 5px 5px 0 rgba(0,0,0,0.2);}
+
+.foto {
+  width: 100%;
+}
+
+
+
+h1{font-family: 'Montserrat', sans-serif;}
+
+.odkazy{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  
+}
+.odkazy li{
+  width: 100%;
+  display: inline-block;
+  
+  
+    
+}
+.odkazy a { 
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase; 
+  padding: 10% 20%;
+  overflow: auto
+  
+}
+
+.portfolio {
+  min-width: 100%;
+  border-top: 1px solid #3f464d;
+  border-bottom: 1px solid #3f464d;
+} 
+.portfolio a{
+  padding: 5% 22%;
+}
+
+.facebook,
+.twitter
+{max-width: 50%;}
+
+.facebook { border-right:  1px solid #3f464d;}
+
+.portfolio a:active, 
+.portfolio a:hover,
+.portfolio a:focus {background-color: #e74c3c;
+}
+
+.facebook a:active,
+.facebook a:hover,
+.facebook a:focus {background-color: #3b5998;}
+
+.twitter a:active,
+.twitter a:hover,
+.twitter a:focus {background-color: #1da1f2;}
